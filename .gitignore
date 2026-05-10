@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+
+# Playwright and Allure generated artifacts
+playwright-report/
+test-results/
+allure-results/
+allure-report/
+blob-report/
+
+# Runtime and local files
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+.idea/
+.vscode/
+
+# Build/cache
+coverage/
+dist/
+.cache/

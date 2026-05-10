@@ -1,0 +1,37 @@
+{
+  "name": "spree-playwright-automation",
+  "version": "1.0.0",
+  "description": "Playwright TypeScript automation framework for the Spree Commerce QE challenge.",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "node scripts/write-allure-env.js",
+    "test": "playwright test --project=chromium",
+    "test:chromium": "playwright test --project=chromium",
+    "test:headed": "playwright test --project=chromium --headed",
+    "test:debug": "playwright test --project=chromium --debug",
+    "test:ci": "playwright test --project=chromium",
+    "typecheck": "tsc --noEmit",
+    "report": "playwright show-report",
+    "allure:generate": "allure generate allure-results --clean -o allure-report",
+    "allure:open": "allure open allure-report",
+    "allure:serve": "allure serve allure-results"
+},
+  "keywords": [
+    "playwright",
+    "typescript",
+    "spree",
+    "e2e",
+    "quality-automation"
+  ],
+  "author": "",
+  "license": "MIT",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.59.1",
+    "@types/node": "^25.6.2",
+    "allure-commandline": "^2.40.0",
+    "allure-playwright": "^3.7.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.3"
+  }
+}
