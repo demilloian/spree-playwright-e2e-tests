@@ -48,6 +48,7 @@ jobs:
           name: playwright-report
           path: playwright-report/
           retention-days: 14
+          if-no-files-found: ignore
 
       - name: Upload Allure report
         if: always()
@@ -56,6 +57,7 @@ jobs:
           name: allure-report
           path: allure-report/
           retention-days: 14
+          if-no-files-found: ignore
 
       - name: Upload Allure raw results
         if: always()
@@ -64,3 +66,4 @@ jobs:
           name: allure-results
           path: allure-results/
           retention-days: 14
+          if-no-files-found: ignore

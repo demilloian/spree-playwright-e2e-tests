@@ -2,12 +2,11 @@
   "compilerOptions": {
     "target": "ES2022",
     "module": "CommonJS",
-    "moduleResolution": "Node",
+    "moduleResolution": "node",
+    "types": ["node", "@playwright/test"],
     "strict": true,
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "skipLibCheck": true,
-    "types": ["node", "@playwright/test"]
+    "noEmit": true,
+    "ignoreDeprecations": "6.0"
   },
   "include": ["pages/**/*.ts", "tests/**/*.ts", "utils/**/*.ts", "playwright.config.ts"],
   "exclude": ["node_modules", "playwright-report", "test-results", "allure-report", "allure-results"]
